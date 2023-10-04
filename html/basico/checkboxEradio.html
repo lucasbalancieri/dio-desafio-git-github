@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+        <form method="post">
+            <h3>Você selecionou: Pizza de Calabresa</h3>
+            <p>Selecione os adicionais:</p>
+            <input type="checkbox" name="adicional[]" value="queijo">+ Queijo<br>
+            <input type="checkbox" name="adicional[]" value="calabresa">+ Calabresa<br>
+            <input type="checkbox" name="adicional[]" value="cebola">+ Cebola<br>
+            <input type="checkbox" name="adicional[]" value="azeitona">+ Azeitona<br>
+            <!--O backend receberá uma variável (adicional) que armazena a lista ([]) de valores passados pelo checkbox-->
+            
+            <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="Sim">Sim<br>
+            <input type="radio" name="borda" value="Não">Não<br>
+            <!--Ao definir o mesmo name para os dois radios, o navegador permite que apenas um radio com o mesmo nome seja selecionado-->
+
+            <p>Bebida</p>
+            <input type="radio" name="bebida" value="suco">Suco<br>
+            <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+            <input type="radio" name="bebida" value="agua">Água<br>
+            <input type="radio" name="bebida" value="nenhum">Nenhuma<br>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+</body>
+</html>
