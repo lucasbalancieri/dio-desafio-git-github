@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+
+    <style>
+        /*Seletor por tipo*/
+        h1{
+            background: darkblue;
+            color: lightgreen;
+        }
+
+        div{
+            background: lightblue;
+            color: blue;
+        }
+
+        li{
+            background: lightgreen;
+            color: yellow; 
+        }
+
+        /*Seletor por ID*/
+        #ex-id{
+            color: violet;
+        }
+
+        /*Seletor por Classe*/
+        .ex-class{
+            color: darkmagenta;
+        }
+
+        .ex-duas-class{
+            text-transform: uppercase;
+        }
+
+        /*Seletor Universal*/
+        *{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p>O CSS possui os seguintes seletores: </p>
+    <div>
+        <p><b>Seletores:</b></p>
+        <ul>
+            <li><b>Seletor por Tipo:</b> Busca elementos por uma tag HTML especifica</li>
+            <li id="ex-id"><b>Seletor por ID (#):</b> Busca os elementos através do atributo <b>id</b></li>
+            <li class="ex-class ex-duas-class"><b>Seletor por Classes (.):</b> Busca os elementos através do atributo <b>class</b></li>
+            <li class="ex-class"><b>Seletor por Classes (.):</b> linha utilizada como exemplo</li>
+            <li><b>Seletor Universal (*):</b> Selecionta todos os elementos HTML</li>
+            <li><b>Seletor de Atributo([atrib]):</b> Seleciona os elementos que possuem um atributo especifico no documento HTML ou que possuem atributos com um valor especifico</li>
+        </ul>
+    </div>
+</body>
+</html>

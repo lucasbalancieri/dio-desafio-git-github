@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<p>, initial-scale=1.0">
+    <title>Implementações CSS</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        h1{
+            color: blue;
+            background: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="background: red; color: white;">Exemlo CSS In Line</h1>
+    <p>
+        <b>Implementação In Line:</b><br>    
+        Não é muito utilizado, apenas em contextos especificos<br>
+        Possui prioridade <b>(override)</b> sobre as outras formas de implementação
+    </p>
+
+    <h1>Implementação Interna</h1>
+    <p>
+        <b>Implementação Interna:</b><br>
+        Implementalção feita dentro da tag <b>head</b>;<br>
+        O código CSS fica restrito à pagina;<br>
+        Será recarregado toda vez que a página html for recarregada;<br>
+    </p>
+
+    <h1 id="css-externo">Implementação Externa</h1>
+    <p>
+        <b>Implementação Externa:</b><br>
+        Maneira mais utilizada;<br>
+        Boa pratica: arquivos css dentro do diretório assets/css;<br>
+        Utiliza-se a tag <b>link</b> dentro da tag <b>head</b> para "linkar" o style.css com o html;<br>
+    </p>
+
+</body>
+</html>
