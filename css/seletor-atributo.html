@@ -6,28 +6,65 @@
     <title>Seletor por Atributo</title>
     
     <style> 
-    [title="Netflix"]{
-        color: red;
-    }
-    
-    [title="Prime"]{
-        color: lightblue;
+    /* Aplica o estilo a todos os elementos que o atributo contenha o valor exato ou separado por espaços */
+    [title~="Netflix"]{
+        background: black;
     }
 
-    [title="Spotify"]{
+    /* Aplica o estilo a todos os elementos que o atributo contenha o valor exato ou separado por - */
+    [title|="Streaming"]{
+        background:	#00A8E1 ;
+    }
+
+    /* Aplica o estilo a todos os elementos que o atributo contenha o prefixo em seu valor */
+    [href^="http:/"]{
+        background:	black;
+    }
+
+    /*Seleciona os elementos que o atributo contenha o sufixo em seu valor*/
+    [href$="roll.com/"]{
+        background:	rgb(36, 35, 35);
+    }
+
+    /* Aplica o estilo a todos os elementos com atributos que contenham a ocorrência do valor passado */
+    [title*="HBO"]{
+        background: purple;
+    }
+    /* Aplica o estilo a todos os elementos que contenham o valor exato do atributo*/
+    [title="Streaming Netflix"]{
+        color: red;
+    }
+
+    [title="Streaming-Prime"]{
+        color: black;
+    }
+
+    [title="Streaming Spotify"]{
         color: green;
     }
     
+    [title="Streaming Crunchyroll"]{
+        color: orange;
+    }
+
+    [title="Streaming HBO Max"]{
+        color: white;
+    }
+    [target]{
+        font-style: italic;
+    }
     </style>
 </head>
 
 <body>
     <div>
         <ul>
-            <li><a target="_blank" title="Netflix" href="https://www.netflix.com/br/">Netflix</a></li>
-            <li><a target="_blank" title="Prime" href="https://www.primevideo.com/">Prime Video</a></li>
-            <li><a target="_blank" title="Spotify" href="https://www.spotify.com/">Spotify</a></li>
-            <li><a target="_blank" href=""></a>Disney Plus</li>
+            <li><a target="_blank" title="Streaming Netflix" href="https://www.netflix.com/br/">Netflix</a></li>
+            <li><a target="_blank" title="Streaming-Prime" href="https://www.primevideo.com/">Prime Video</a></li>
+            <li><a target="_blank" title="Streaming Spotify" href="http://www.spotify.com/">Spotify</a></li>
+            <li><a target="_blank" title="Streaming Crunchyroll" href="https://www.crunchyroll.com/">Crunchyroll</a></li>
+            <li><a target="_blank" title="Streaming HBO Max" href="https://www.hbomax.com/">HBO Max</a></li>
+            <li><a target="_blank">Disney Plus</a></li>
         </ul>
     </div>
 </body>
