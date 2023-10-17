@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de Dimensionamento</title>
+    <style>
+        #div-01{
+            background: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+        /*inherit: herda do elemento pai*/
+        #div-02{
+            background: lightgray;
+            width: inherit;
+            height: inherit;
+        }
+        /**/
+        #div-03{
+            background:tomato;
+            width: auto;
+            height: auto;
+        }
+
+        #div-04{
+            color: white;
+            background:purple;
+            width: initial;
+            height: initial;
+        }
+
+        #btn-01{
+            min-width: 50px;
+            max-width: 70px;
+            min-height: 50px;
+            max-height: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div-01">div-01
+        <div id="div-02">div-02</div>
+    </div> 
+    <div>
+        <div id="div-03">div-03</div>
+        <div id="div-04">div-04</div>
+    </div>
+    <div><button id="btn-01">Fechar</button></div>
+    
+</body>
+</html>

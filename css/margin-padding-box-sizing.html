@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        /*
+         margin: é a área fora de um elemento, entre a borda do elemento e outros elementos próximos a ele.
+         padding: é a área dentro de um elemento, entre o conteúdo do elemento e a sua borda.
+         pq a largura altera quando o padding é aplicado?
+            width = largura + borda + padding
+                  = 200px   + 20px  + 20px
+                  = 240px;
+        para resolver, utiliza-se o box-sizing: border-box;
+         */
+
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            color: white;
+        }
+
+        #elemento-01{
+            background: tomato;
+            margin: 20px 15px 10px 5px;
+            padding: 30px;
+            box-sizing: border-box; 
+        }
+
+        #elemento-02{
+            background: purple;
+            margin-top: 20px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        #elemento-03{
+            background: lightblue;
+            margin: 20px;
+        }
+
+        #elemento-04{
+            background: black;
+            margin: auto; /*centraliza o elemento na horizontal*/
+        }
+    </style>
+</head>
+<body>
+    <div id="elemento-01">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, reiciendis hic! Esse hic qui aperiam distinctio voluptatem! Libero explicabo nulla voluptatem autem corporis officia debitis ex repellendus ea. Nostrum, numquam?
+    </div>
+    <div id="elemento-02">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque, nisi repellat dolorem vel quos consequatur minus natus debitis quae corrupti cum culpa laudantium aperiam eius dolore vero nam at!
+    </div>
+    <div id="elemento-03">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sint quos dolorem voluptates alias tempore. Omnis suscipit facilis cumque iure dolor eaque praesentium, autem nesciunt numquam accusamus, nisi veniam obcaecati.
+    </div>
+    <div id="elemento-04">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, explicabo. Impedit beatae, veniam necessitatibus fuga architecto eius accusantium magnam dignissimos sapiente! Nisi, magnam itaque ipsam atque reiciendis quaerat magni nemo?
+    </div>
+</body>
+</html>
