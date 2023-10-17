@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* A imagem será dimensionada para caber dentro do contêiner sem perder sua proporção original. */
+        #contain{
+            object-fit: contain;
+        }
+
+        /* A imagem cobrirá completamente o contêiner, mantendo a proporção e possivelmente cortando partes da imagem. */
+        #cover{
+            object-fit: cover;
+        }
+
+        /* A imagem manterá sua tamanho original, podendo se estender além dos limites do contêiner. */
+        #none{
+            object-fit: none;
+        }
+
+        /* A imagem será dimensionada para caber no contêiner, mantendo sua proporção original, mas não excedendo seu tamanho nativo. */
+        #scale-down{
+            object-fit: scale-down;
+        }
+
+        #obj-position{
+            object-position: 30px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+    <code>object-fit: fill;</code> (padrão)
+    <div>
+    <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="fill">
+    </div>
+
+    <br>
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="contain">
+    </div>
+
+    <br>
+    <code>object-fit: cover;</code>
+    <div>
+        <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="cover">
+    </div>
+
+    <br>
+    <code>object-fit: none;</code>
+    <div>
+        <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="none">
+    </div>
+
+    <br>
+    <code>object-fit: scale-down;</code>
+    <div>
+        <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="scale-down">
+    </div>
+
+    <br>
+    <code>object-position: ;</code>
+    <div id="div-obj-pos">
+        <img src="https://media.istockphoto.com/id/1185230822/vector/silhouette-of-a-rose-on-a-black-background-a-beautiful-white-rose-vector-illustration.jpg?s=612x612&w=0&k=20&c=sm5_o6TSo1BlKSE4o9ppVqxkHO_xhgjiGLavlcAPwBI=" alt="" id="obj-position">
+    </div>
+</body>
+</html>
