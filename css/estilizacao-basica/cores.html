@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        /* aproximadamente 140 cores pré-definidas
+           https://www.w3schools.com/tags/ref_colornames.asp */
+        #pre-definidas{
+            color: darkviolet;
+            border: 2px solid darkviolet;
+            background: violet;
+        }
+
+        /* utiliza dinâmicamente a cor aplicada em color nos atributos */
+        #current-color{
+            color: deeppink;
+            border: 2px solid currentcolor;
+            background: pink;
+        }
+
+        /* utiliza 3 "conjuntos" de dois digitos para representar as tonalidades das cores primárias */
+        #hex{
+            color: #2525ff;
+            border: 2px solid #2525ff;
+            background: #25ffff;
+        }
+
+        /* utiliza um 4º conjunto de dois digitos que representam a transparência da cor */
+        #hex-transparencia{
+            color:#ff0000;
+            border: 2px solid #ff000090;
+            background: #ff000011;
+        
+        }
+
+        /* define as cores através da "mistura" das tonalidades das cores primárias */
+        #rgb{
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 0, 255);
+            background: rgb(160, 200, 255);
+        }
+
+        /*  possui o canal alpha que define o nível de transparência (opacidade) da cor
+            os valores do canal alpha estão entre 0.0 (0%) e 1.0 (100%) */
+        #rgba{
+            color: rgba(255, 0, 255, 1);
+            border: 2px solid rgba(255, 0, 255, 0.8);
+            background:rgba(255, 0, 255, 0.3);
+        }
+
+        /* define a cor através da matiz, saturação e luminosidade */
+        #hsl{
+            color: hsl(0, 100%, 50%);
+            border: 2px solid hsl(15, 100%, 50%);
+            background: hsl(30, 100%, 50%);
+        }
+
+        /*  possui o canal alpha que define o nível de transparência (opacidade) da cor
+            os valores do canal alpha estão entre 0.0 (0%) e 1.0 (100%) */
+        #hsla{
+            color: hsl(0, 100%, 50%, 1);
+            border: 2px solid hsl(0, 100%, 50%, 0.8);
+            background: hsl(0, 100%, 50%, 0.3);
+        }
+
+        li{
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definir cores em CSS:</p>
+   <ul>
+    <li id="pre-definidas">Cores pré-definidas</li>
+    <li id="current-color">Palavra-chave "currentcolor"</li>
+    <li id="hex">Hexadecimal</li>
+    <li id="hex-transparencia">Hexadecimal com transparência</li>
+    <li id="rgb">RGB</li>
+    <li id="rgba">RGBA</li>
+    <li id="hsl">HSL</li>
+    <li id="hsla">HSLA</li>
+   </ul>
+
+</body>
+</html>
