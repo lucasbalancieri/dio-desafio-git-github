@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas com Imagens</title>
+    <style>
+        .exemplo{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            border: 20px solid;
+            margin: 20px;
+        }
+
+        #exemplo-01{
+            border-image-source: url(../assets/images/border.png);
+        }
+
+        #exemplo-02{
+            border-image-source: linear-gradient(purple, red);
+        }
+
+        #exemplo-03{
+            border-image-source: url(../assets/images/border.png);
+            border-image-repeat: round; /*repeat, stretch, round, space*/
+            border-image-slice: 113;
+            border-image-width: 10px;
+        }
+
+        #exemplo-04{
+            border-image-source: linear-gradient(purple, red);
+            border-image-slice: 119;
+            border-image-outset: 25px; /*afasta a borda da imagem*/
+        }
+
+        #exemplo-resumido{
+            border-image:url(../assets/images/border.png) 119 / 10px / 10px round;
+            /*caminho, slice/width/outset, repetição*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas com Imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <div id="exemplo-01" class="exemplo"> </div><br>
+    <div id="exemplo-02" class="exemplo"> </div><br>
+    <div id="exemplo-03" class="exemplo"> </div><br>
+    <div id="exemplo-04" class="exemplo"> </div><br>
+    <div id="exemplo-resumido" class="exemplo"> </div><br>
+</body>
+</html>

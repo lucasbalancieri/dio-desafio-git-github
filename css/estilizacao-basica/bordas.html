@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            font-family: Roboto, sans-serif;
+        }
+
+        .exemplo{
+            background-color: palevioletred;
+            width: 200px;
+            height: 200px;
+        }
+
+        #exemplo-01{
+            border-style: solid; /*valor padrão: none, possui outros vários valores*/
+            border-width: 5px;
+            border-color: purple;
+            border-radius: 10px;
+        }
+
+        #exemplo-02{
+            border-style: solid dotted dashed double;
+            border-width: 2px 4px 10px; /*top, sides, bottom*/
+            border-color: purple blue yellow red;
+            border-radius: 30px 10px;
+        }
+
+        #exemplo-03{
+            border: 10px solid green;
+            border-radius: 30px 30px 10px;
+        }
+
+        #exemplo-04{
+            border-top: 5px dashed yellow;
+            border-left: 10px double green;
+            border-right: 10px dotted blue;
+            border-bottom: 10px solid purple;
+            border-radius: 30px 30px 30px 10px ;
+        }
+
+        #exemplo-05{
+            border: 5px solid purple;
+            border-radius: 50%;
+        }
+
+    </style>  
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>É possivel definir as configurações das boras através das propriedades:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <div id="exemplo-01" class="exemplo"></div><br>
+    <div id="exemplo-02" class="exemplo"></div><br>
+    <div id="exemplo-03" class="exemplo"></div><br>
+    <div id="exemplo-04" class="exemplo"></div><br>
+    <div id="exemplo-05" class="exemplo"></div><br>
+</body>
+</html>
