@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+/* ^ Aplicando fontes com a regra @import*/
+
+
+/*Aplicando fontes com a regra @font-face*/
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Thin.ttf);
+    font-weight: lighter;
+}
+
+/*Utilizando fontes*/
+.font-face{
+    font-family: Roboto, fantasy;
+    font-weight: lighter;
+}
+
+.import{
+    font-family: "Playpen Sans", Roboto, fantasy;
+}
+
+/*Definido tamanhos*/
+#xx-small{font-size: xx-small;}
+
+#x-small{font-size: x-small;}
+
+#small{font-size: small;}
+
+#medium{font-size: medium;}
+
+#xx-large{font-size: xx-large}
+
+#x-large{font-size: x-large}
+
+#large{font-size: large}
+
+/*Aplicando font-style e font-weight*/
+
+#normal {
+    font-style: normal;
+    font-weight: 600;
+}
+
+#italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+#oblique{
+    font-style: oblique;
+    font-weight: bold;
+}
+
+/*Aplicando font-variant*/
+h1{
+    font-variant: small-caps;
+    /*
+    As letras serão exibidas em maiúsculas, as letras maiúsculas serão 
+    representadas em um tamanho ligeiramente maior do que as letras minúsculas. 
+    No entanto, elas não serão exibidas em caixa alta real.
+    */
+}
+
+/*Aplicando line-height*/
+#div-01{
+    line-height: 2; 
+    /*
+    faz o cálculo com base no tamanho da fonte;
+    aceita valores sem unidade de medida;
+    aceita valores em porcentagem;
+    */
+}
+
+#div-02{
+    font: italic small-caps bold 24px/2 "Playpen Sans", fantasy;
+    /*
+    font: style variant weight size/height family, fallback
+    */ 
+}
