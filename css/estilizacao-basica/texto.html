@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos</title>
+    <style>
+        .exemplo{
+            width: 300px;
+            border: 1px solid black;
+            background: tomato;
+        }
+
+        #exemplo-01{
+            text-transform: capitalize;
+            text-align: center;
+            text-decoration: underline;
+            text-indent: 10px; /*Recuo*/
+            letter-spacing: 3px;
+            word-wrap: break-word;
+        }
+
+        #exemplo-02{
+            text-transform: lowercase;
+            text-align: left;
+            text-decoration: overline;
+            text-indent: 0px;
+            word-spacing: 10px;
+        }
+
+        #exemplo-03{
+            text-transform: uppercase;
+            text-align: right;
+            text-decoration:line-through
+        }
+
+        #exemplo-04{
+            text-transform: uppercase;
+            text-align: justify;
+            text-decoration: underline double blue 1px;
+            /*text-decoration: line style color thickness*/
+            /*
+            text-decoration-line: underline;
+            text-decoration-style: double;
+            text-decoration-color: blue;
+            text-decoration-thickness: 1px;
+            */
+        }
+
+        #exemplo-05{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /*adiciona reticências */
+        }
+
+        #exemplo-06{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ' ver mais >'; /* apenas no mozila*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedades</h1>
+    <ul>
+        <li><code>text-transform</code></li>
+        <li><code>text-align</code></li>
+        <li><code>text-decoration</code></li>
+        <li><code>text-indent</code></li>
+        <li><code>letter-spacing</code></li>
+        <li><code>word-spacing</code></li>
+        <li><code>white-space</code></li>
+        <li><code>text-overflow</code></li>
+    </ul>
+    <p id="exemplo-01" class="exemplo"> teste Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+    <p id="exemplo-02" class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+    <p id="exemplo-03" class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+    <p id="exemplo-04" class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+    <p id="exemplo-05" class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+    <p id="exemplo-06" class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores repellendus blanditiis illum, natus alias itaque id vero consectetur voluptatibus totam voluptatem officiis fugit quisquam dolorum libero. Adipisci, possimus vero.</p>
+</body>
+</html>
