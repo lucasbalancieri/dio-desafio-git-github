@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras nos Elementos</title>
+    <style>
+        .exemplo{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            margin: 20px auto;
+            background: #fa8072;
+        }
+
+        #exemplo-01{
+            box-shadow: 10px 10px 20px -1px red;
+            /*box-shadow: right, bottom, desfoque, propagação, cor */
+        }
+
+        #exemplo-02{
+            box-shadow: inset 10px 10px 20px -1px red; /*inset define a sombra para dentro do elemento*/
+        }
+
+        #exemplo-03{
+            box-shadow:inset 10px 10px 20px red, 10px 10px 20px purple; 
+            /*a vírgula separa as camadas de sombra*/
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 20px 525px 20px 525px;
+            filter: drop-shadow(10px 10px 10px yellow);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sombras nos Elementos</h1>
+    <ul>
+        <li><code>box-shadow</code></li>
+        <li><code>filter: drop-shadow()</code></li>
+    </ul>
+        
+    <div id="exemplo-01" class="exemplo"></div>
+    <div id="exemplo-02" class="exemplo"></div>
+    <div id="exemplo-03" class="exemplo"></div>
+    <img src="../assets/images/css.png">   
+</body>
+</html>
